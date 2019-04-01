@@ -1,0 +1,46 @@
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #16161a;
+
+    & code {
+        color: wheat;
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    & button {
+        color: wheat;
+        font-size: 26px;
+        font-weight: 600;
+        background-color: transparent;
+        border: 2px solid currentColor;
+        border-radius: 7px;
+        min-width: 100px;
+        cursor: pointer;
+        outline: none;
+        transition: color 0.3s ease;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            color: cornflowerblue;
+        }
+
+        &:active {
+            color: orange;
+        }
+    }
+
+    & span {
+        color: wheat;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
