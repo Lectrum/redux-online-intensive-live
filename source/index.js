@@ -1,3 +1,3 @@
 import './theme/init';
-import './examples/redux/1-introduction-to-redux/12';
+import './examples/redux/2-middleware-enhancers/6';
 

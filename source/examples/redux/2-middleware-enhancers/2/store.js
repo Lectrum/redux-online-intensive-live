@@ -10,7 +10,7 @@ const logger = (store) => {
         return (action) => {
             const stateBefore = store.getState();
 
-            next(action);
+            next(action); // синхронный вызов вплоть до конца работы reducer'ов
 
             const stateAfter = store.getState();
 

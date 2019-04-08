@@ -1,5 +1,5 @@
 // Core
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware /* applyMiddleware — это enhancer */, compose } from 'redux';
 
 // Instruments
 import { postsReducer } from '../core/bus/posts/reducer';
