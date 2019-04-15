@@ -1,3 +1,3 @@
 import './theme/init';
-import './examples/redux/2-middleware-enhancers/6';
+import './examples/redux/3-react-with-redux';
 

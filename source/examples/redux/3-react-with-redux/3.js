@@ -16,8 +16,8 @@ const mapDispatch = (dispatch) => {
     return {
         actions: bindActionCreators(
             {
-                createPost: actions.createPost,
-                removePost: actions.removePost,
+                createPost: actions.createPost, // createPost: (...params) => dispatch(actions.createPost(...params))
+                removePost: actions.removePost, // removePost: (...params) => dispatch(actions.removePost(...params))
             },
             dispatch,
         ),

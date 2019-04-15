@@ -36,9 +36,11 @@ const Feed = (props) => {
     );
 };
 
+// oldState === newState
 const mapState = (state) => {
     log('→ mapState', 'cornflowerblue');
 
+    // prevReturnValue !== newReturnValue
     return {
         posts: state.posts,
     };
@@ -56,7 +58,7 @@ const mapDispatch = (dispatch) => {
 };
 
 const mergeProps = (state, actions) => {
-    log('→ mapProps', 'lime');
+    log('→ mergeProps', 'lime');
 
     return {
         ...state,

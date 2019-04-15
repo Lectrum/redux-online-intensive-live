@@ -38,7 +38,10 @@ const mapDispatch = {
     removePost,
 };
 
-const mergeProps = (state, actions) => {
+const mergeProps = (
+    state /* mapState return value */,
+    actions /* mapDispatch return value */,
+) => {
     return {
         ...state,
         actions,

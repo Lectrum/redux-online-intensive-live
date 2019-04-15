@@ -32,8 +32,8 @@ const mapState = (state) => {
 };
 
 const mapDispatch = {
-    createPost,
-    removePost,
+    createPost, // createPost: (...params) => store.dispatch(createPost(...params))
+    removePost, // removePost: (...params) => store.dispatch(removePost(...params))
 };
 
 export const ConnectedFeed = connect(

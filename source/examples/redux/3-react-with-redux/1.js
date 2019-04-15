@@ -26,12 +26,13 @@ class Feed extends Component {
     }
 }
 
-const mapState = (state) => {
+const mapStateToProps = (state /* store.getState() */) => {
+    // логика
     return {
         posts: state.posts,
     };
 };
 
-const connectToRedux = connect(mapState);
+const connectToRedux = connect(mapStateToProps /* mapDispatchToProps */);
 
 export const ConnectedFeed = connectToRedux(Feed);
