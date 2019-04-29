@@ -1,5 +1,5 @@
-const tracking = new Set([123, 456, 789]);
+const tracking = new Set([ 123, 456, 789 ]);
 
-for (const entry of tracking.keys()) {
-    console.log(entry);
+for (const key of tracking.keys()) {
+    console.log(key);
 }

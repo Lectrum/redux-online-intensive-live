@@ -1,16 +1,17 @@
-function* createNumberIterator () {
+function* createNumberIterator() {
     yield 1;
     yield 2;
+
     return 3;
 }
 
-function* createRepeatingIterator (count) {
+function* createRepeatingIterator(count) {
     for (let i = 0; i < count; i++) {
         yield 'pizza';
     }
 }
 
-function* createCombinedIterator () {
+function* createCombinedIterator() {
     const result = yield* createNumberIterator();
     yield* createRepeatingIterator(result);
     yield true;

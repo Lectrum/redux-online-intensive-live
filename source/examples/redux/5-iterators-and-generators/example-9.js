@@ -1,5 +1,5 @@
 const isIterable = (object) => {
-    return typeof object[Symbol.iterator] === 'function';
+    return typeof object[ Symbol.iterator ] === 'function';
 };
 
-console.log(isIterable({name: 'Pitter'}));
+console.log(isIterable({ name: 'Pitter' }));

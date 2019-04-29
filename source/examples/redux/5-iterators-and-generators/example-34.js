@@ -1,14 +1,14 @@
-function* createNumberIterator () {
+function* createNumberIterator() {
     yield 1;
     yield 2;
 }
 
-function* createUserIterator () {
+function* createUserIterator() {
     yield 'Jon';
     yield 'Joe';
 }
 
-function* createCombinedIterator () {
+function* createCombinedIterator() {
     yield* createNumberIterator();
     yield* createUserIterator();
     yield true;

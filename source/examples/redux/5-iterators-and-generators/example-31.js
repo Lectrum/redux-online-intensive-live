@@ -1,11 +1,10 @@
-function* createIterator () {
+function* createIterator() {
     const first = yield 1;
-    let second;
+    let second = null;
 
     try {
         second = yield first + 2; // 7
     } catch ({ message }) {
-
         console.log('Error:', message);
         second = 6;
     }

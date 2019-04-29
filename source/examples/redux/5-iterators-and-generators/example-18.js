@@ -1,5 +1,5 @@
-const people = ['Jon', 'Joe', 'Jim'];
+const people = [ 'Jon', 'Joe', 'Jim' ];
 
-for (const entry of people.keys()) {
-    console.log(entry);
+for (const key of people.keys()) {
+    console.log(key);
 }

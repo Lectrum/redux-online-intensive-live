@@ -1,5 +1,6 @@
-function* createIterator () {
+function* createIterator() {
     yield 1;
+
     return;
     yield 2;
     yield 3;
