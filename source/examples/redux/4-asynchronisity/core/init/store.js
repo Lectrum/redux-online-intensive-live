@@ -14,8 +14,8 @@ const composeEnhancers = __DEV__ && devtools ? devtools : compose;
 
 const middleware = [ sagaMiddleware ];
 middleware.push(
-    thunk,
-    // thunk.withExtraArgument('https://jsonplaceholder.typicode.com'),
+    // thunk,
+    thunk.withExtraArgument('https://jsonplaceholder.typicode.com'),
 );
 
 if (__DEV__) {

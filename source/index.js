@@ -1,3 +1,3 @@
 import './theme/init';
-import './examples/redux/3-react-with-redux';
+import './examples/redux/4-asynchronisity';
 
